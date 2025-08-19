@@ -11,6 +11,7 @@ private:
 public:
     SumThread(int id) : thread_id(id), total_sum(0) {}
 
+    // Generates the random numbers and their total
     void calculate() {
         std::random_device rd;
         std::mt19937 gen(rd());
